@@ -1,5 +1,7 @@
 package me.coley.recaf.assemble.ast.insn;
 
+import org.objectweb.asm.Opcodes;
+
 /**
  * Method reference instruction.
  *
@@ -20,7 +22,7 @@ public class MethodInstruction extends AbstractInstruction {
 	 * @param desc
 	 * 		Type descriptor of the method.
 	 */
-	public MethodInstruction(int opcode, String owner, String name, String desc) {
+	public MethodInstruction(int opcode, String owner, String name, String desc, boolean itf) {
 		super(opcode);
 		this.owner = owner;
 		this.name = name;

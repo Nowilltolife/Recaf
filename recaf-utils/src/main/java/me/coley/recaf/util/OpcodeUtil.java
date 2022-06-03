@@ -574,7 +574,8 @@ public class OpcodeUtil implements Opcodes, NonAbstractOpcodes {
 		putOpcode(SASTORE, "SASTORE");
 		putOpcode(SIPUSH, "SIPUSH");
 		putOpcode(SWAP, "SWAP");
-		putOpcode(TABLESWITCH, "TABLESWITCH");
+		putOpcode(TABLESWITCH, "TABLESWITCH");  
+		putOpcode(-2, "INVOKEVIRTUALINTERFACE");
 		putFrame(F_APPEND, "F_APPEND");
 		putFrame(F_APPEND, "F_APPEND");
 		putFrame(F_CHOP, "F_CHOP");
